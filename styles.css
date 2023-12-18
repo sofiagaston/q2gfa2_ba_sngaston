@@ -1,0 +1,116 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    background-image: url("images/galaxybg.gif");
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.left{
+    float:left;
+}
+
+.right{
+    float:right;
+}
+
+p{
+    color:white;
+    margin:10px;
+    font-size: larger;
+    font-family:'Courier New', Courier, monospace;
+}
+
+h1 {
+    text-align: center;
+    font-style: oblique;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 75px;
+    text-shadow: 2px 2px rgb(129, 93, 26);
+    color: white;
+    margin-top: 20vh;
+    position: relative;
+    z-index: 2;
+}
+
+.gif {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    transform: translateX(100%);
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    z-index: 1;
+}
+
+.gif1 {
+    animation: moveRight1 20s ease 0s infinite;
+}
+
+.gif2 {
+    animation: moveRight2 25s linear 2s infinite;
+    margin-top: 40vh;
+}
+
+.gif3 {
+    animation: moveRight3 20s ease-in-out 5s infinite;
+}
+
+.gif3>img{
+    width: 10vw;
+    height: auto;
+}
+
+.gif4 {
+    animation: moveRight4 25s ease-in-out 7s infinite;
+    margin-top: 55vh;
+}
+
+.gif4>img{
+    width: 17vw;
+    height: auto;
+}
+
+@keyframes moveRight1 {
+    from {
+        transform: translateX(100vw);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes moveRight2 {
+    from {
+        transform: translateX(100vw);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes moveRight3 {
+    from {
+        transform: translateX(100vw);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes moveRight4 {
+    from {
+        transform: translateX(100vw);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
